@@ -60,13 +60,4 @@ if streamlit.button('Get Fruit Load List'):
   my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
   my_data_rows = get_fruit_load_list()
   streamlit.dataframe(my_data_rows)
-
-
-
-fruit_advice_to_show = my_fruit_list.loc[add_my_fruit]
-
-#Display the table on the page
-streamlit.dataframe(fruit_advice_to_show)
-
-my_cur.execute("Insert into fruit_load_list values ('from streamlit')")
-
+  
