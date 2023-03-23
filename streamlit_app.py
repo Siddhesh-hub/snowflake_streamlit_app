@@ -47,8 +47,6 @@ except URLError as e:
 #font run anthing past here while we trouble shoot 
 streamlit.stop()
 
-#Let's put a pick list here so het can pick the fruit they want to include
-add_my_fruit = streamlit.multiselect("Which fruit would you like to add?")
 
 streamlit.header("The fruit load list contains:")
 #snowflake related functions
